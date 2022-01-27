@@ -806,7 +806,7 @@ if(globals.tankStats.weapons.fsMH) {
     tankAuras.push(new FelstrikerMH({
         name: "Felstriker MH",
         maxDuration: 3000,
-        critMod: 100,
+        crit: 100,
         trackUptime: true,
 
         target: "Tank",
@@ -818,7 +818,7 @@ if(globals.tankStats.weapons.fsOH) {
     tankAuras.push(new FelstrikerOH({
         name: "Felstriker OH",
         maxDuration: 3000,
-        critMod: 100,
+        crit: 100,
         trackUptime: true,
 
         target: "Tank",
