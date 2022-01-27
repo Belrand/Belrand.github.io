@@ -91,7 +91,7 @@ class Actor {
             }
         });
         //if(this.name == "Boss") console.log(this.armor)
-        return Math.max(0, this.crit * percCritChance);
+        return critChance;
     }
 
     // Physical dmg mod
