@@ -81,7 +81,7 @@ class Actor {
     }
     
     getCritChance() {
-		this crit = this.stats.crit
+	let crit = this.stats.crit
         this.auras.forEach(aura => {
             if (aura.duration > 0) {
                 if (aura.crit != 0) {
