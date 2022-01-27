@@ -13,7 +13,6 @@ class Actor {
         this.defense = stats.defense
         this.GCD = 0
         this.rage = stats.startRage
-        this.crit = stats.crit
 
         this.auras = auras
         this.procs = procs
@@ -84,10 +83,10 @@ class Actor {
 	let crit = this.stats.crit
         this.auras.forEach(aura => {
             if (aura.duration > 0) {
-                if (aura.crit != 0) {
+                if (aura.critChance != 0) {
                     let multiplier = 1;
                     if (aura.scalingStacks) multiplier = aura.stacks;
-                    this.crit += crit * multiplier;
+                    this.crit += critChance * multiplier;
                 }
             }
         });
