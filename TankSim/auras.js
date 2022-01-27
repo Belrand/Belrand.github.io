@@ -22,7 +22,7 @@ class Aura {
         if (!input.percArmorMod) this.percArmorMod = 1; else this.percArmorMod = input.percArmorMod; // percentage
         if (!input.armorMod) this.armorMod = 0; else this.armorMod = input.armorMod; // additive
         if (!input.defenseMod) this.defenseMod = 0; else this.defenseMod = input.defenseMod; // additive
-        if (!input.crit) this.crit = 0; else this.crit = input.crit; //additive
+        if (!input.crit) this.critChance = 0; else this.crit = input.critChance; //additive
     }
 
     handleGameTick(ms, owner, events, config) {
@@ -807,7 +807,7 @@ if(globals.tankStats.weapons.fsMH) {
     tankAuras.push(new FelstrikerMH({
         name: "Felstriker MH",
         maxDuration: 3000,
-        crit: 100,
+        critChance: 100,
         trackUptime: true,
 
         target: "Tank",
@@ -819,7 +819,7 @@ if(globals.tankStats.weapons.fsOH) {
     tankAuras.push(new FelstrikerOH({
         name: "Felstriker OH",
         maxDuration: 3000,
-        crit: 100,
+        critChance: 100,
         trackUptime: true,
 
         target: "Tank",
