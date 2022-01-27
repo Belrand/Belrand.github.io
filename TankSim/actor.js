@@ -13,7 +13,7 @@ class Actor {
         this.defense = stats.defense
         this.GCD = 0
         this.rage = stats.startRage
-        this crit = stats.crit
+        this.crit = stats.crit
 
         this.auras = auras
         this.procs = procs
