@@ -22,6 +22,7 @@ class Aura {
         if (!input.percArmorMod) this.percArmorMod = 1; else this.percArmorMod = input.percArmorMod; // percentage
         if (!input.armorMod) this.armorMod = 0; else this.armorMod = input.armorMod; // additive
         if (!input.defenseMod) this.defenseMod = 0; else this.defenseMod = input.defenseMod; // additive
+        if (!input.crit) this.crit = 0; else this.crit = input.crit; //additive
     }
 
     handleGameTick(ms, owner, events, config) {
