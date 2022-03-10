@@ -26,7 +26,7 @@ function getPlayerMissChance(atkSkill, defSkill, hit, dualWield) {
             return Math.max(0, baseMissChance - hit)
         }
     } else {
-        baseMissChance = Math.max(0, 5 + (defSkill - atkSkill)*0.2)
+        baseMissChance = Math.max(0, 5 + (defSkill - atkSkill)*0.4)
         if(dualWield) {
             return Math.max(0, baseMissChance*0.8 + 20 - Math.max(0, hit + 1))
         } else {
