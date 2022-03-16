@@ -365,6 +365,9 @@ function updateStats()
     let _wcb = document.querySelector("#wcb").checked;
     extrahp += _wcb ? 300 : 0;
 
+    hastePerc += legenchant == "Libram of Rapidity" ? 1 : 0;
+    hastePerc += headenchant == "Libram of Rapidity" ? 1 : 0;
+
     crit += document.getElementById("pack").checked ? 3 : 0;
     attackpower += document.getElementById("trueshot").checked ? 100 : 0;
 
