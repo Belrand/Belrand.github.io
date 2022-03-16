@@ -56,7 +56,6 @@ let weaponlists = {
     <option value="Dragonfang Blade">Dragonfang Blade</option>
     <option value="Emerald Dragonfang">Emerald Dragonfang</option>
     <option value="Fang of the Faceless">Fang of the Faceless</option>
-    <option value="Felstriker">Felstriker</option>
     <option value="Finkle's Skinner">Finkle's Skinner</option>
     <option value="Glacial Blade">Glacial Blade</option>
     <option value="Gutgore Ripper">Gutgore Ripper</option>
@@ -365,10 +364,6 @@ function updateStats()
     let _wcb = document.querySelector("#wcb").checked;
     extrahp += _wcb ? 300 : 0;
 
-    //hastePerc += legenchant == "Libram of Rapidity" ? 1 : 0;
-    //hastePerc += headenchant == "Libram of Rapidity" ? 1 : 0;
-    //hastePerc += handenchant == "Minor Haste" ? 1:0;
-
     crit += document.getElementById("pack").checked ? 3 : 0;
     attackpower += document.getElementById("trueshot").checked ? 100 : 0;
 
@@ -570,8 +565,8 @@ function updateStats()
                 eskMH: mainhand == "Eskhandar's Right Claw",
                 msaMH: mainhand == "Misplaced Servo Arm",
                 msaOH: offhand == "Misplaced Servo Arm",
-				fsMH : mainhand == "Felstriker" ,
-				fsOH : offhand == "Felstriker",
+				//fsMH : mainhand == "Felstriker" ,
+				//fsOH : offhand == "Felstriker",
             },
 
             trinkets: {

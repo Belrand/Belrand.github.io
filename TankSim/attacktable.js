@@ -13,7 +13,7 @@ function armorReduction(atkLvl, armor) {
 
 // Lvl 60 Player hitting lvl 63 Boss
 function getGlanceMod(wepSkill) {
-    return Math.min(0.95, 0.65 + (wepSkill-300)*0.04);
+    return Math.min(0.95, 0.65 + (wepSkill-300)*0.02);
 }
 
 function getPlayerMissChance(atkSkill, defSkill, hit, dualWield) {
