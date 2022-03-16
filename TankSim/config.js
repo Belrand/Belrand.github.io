@@ -267,6 +267,7 @@ function updateStats()
     let block = 0;
     let blockvalue = 0;
     let extrahp = 1509; // Base hp for all races
+    let hastePerc = 0;
 
     let mhmin = weapons[mainhand].min;
     let mhmax = weapons[mainhand].max;
@@ -515,7 +516,7 @@ function updateStats()
             OHWepSkill: _dualWield ? ohwepskill : 0,
             damageMod: document.querySelector("#dmf").checked ? 0.99 : 0.9, // Defensive Stance + dmf
             physDmgMod: 1 + 0.02*Number(document.getElementById("1hspec").value), // passive phys damage mods
-            hastePerc: _wcb ? 15 : 0, 
+            //hastePerc: _wcb ? 15 : 0,
             AP: attackpower + strength*2,
             crit: crit,
             spellcrit: spellcrit,
