@@ -49,7 +49,7 @@ class Ability {
 class MHSwing extends Ability {
     use(attacker, defender) {
         let damageEvent = {};
-        // Heroic Strike
+        // Heroic Strike 123
         if (attacker.isHeroicStrikeQueued && attacker.rage > (15 - attacker.stats.talents.impHS)) {
             let damage = this.weaponSwingRoll(attacker) + 157 + defender.additivePhysBonus;
             damage *= (1 - armorReduction(attacker.stats.level, defender.getArmor())) * attacker.getDamageMod();
