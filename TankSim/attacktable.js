@@ -38,8 +38,8 @@ function getPlayerMissChance(atkSkill, defSkill, hit, dualWield) {
 // Tank hitting the boss
 function twoRollTankBossTable(attacker, defender, damage) {
     let wepSkill = attacker.stats.MHWepSkill;
-    let miss = getPlayerMissChance(wepSkill, defender.defense, attacker.stats.hit, false);
-    let parry = 14;
+    let miss = 9;
+    let parry = 9;
     let dodge = defender.stats.dodge - 0.1 * (wepSkill - defender.defense);
     let blockValue = defender.getBlockValue();
     let block = Math.min(5, 5 + (defender.defense - wepSkill) * 0.1);
